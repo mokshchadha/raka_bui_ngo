@@ -41,7 +41,7 @@ export default function Home() {
       <main>
         <section className="bg-gradient-to-b from-blue-600 to-blue-400 text-white py-20">
           <div className="container mx-auto text-center">
-            <h1 className="text-5xl font-bold mc-4">Yatra Sanstha Samiti</h1>
+            <h1 className="text-5xl font-bold mc-4">Maitri Yatra</h1>
             <h2 className="text-2xl font-bold mb-4">
               Empowering Women and Children Since 2004
             </h2>
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="py-6 bg-white">
+        <section id="about" className="bg-white">
           <div className="container mx-auto text-center">
             <AboutSection />
             <Image
@@ -65,7 +65,7 @@ export default function Home() {
               alt="Yatra Sanstha Samiti Team"
               width={600}
               height={400}
-              className="rounded-lg shadow-md mx-auto"
+              className="rounded-lg shadow-md mx-auto mb-4"
             />
           </div>
         </section>

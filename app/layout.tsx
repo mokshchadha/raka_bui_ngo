@@ -3,27 +3,27 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'yatra sanstha samiti',
+  title: 'maitri yatra',
   description: 'NGO dedicated to the welfare of women and children in Barol Dadi since 2004, started by Raka Koul Labroo',
   
   // Basic metadata
   keywords: 'NGO, women empowerment, children welfare, Barol Dadi, Raka Koul, social work',
   authors: [{ name: 'Raka Koul Labroo' }],
   creator: 'Raka Koul Labroo',
-  publisher: 'yatra sanstha samiti',
+  publisher: 'maitri yatra',
   
   // Open Graph metadata for social sharing
   openGraph: {
-    title: 'yatra sanstha samiti - Empowering Women and Children',
+    title: 'maitri yatra - Empowering Women and Children',
     description: 'NGO dedicated to the welfare of women and children in Barol Dadi since 2004',
     url: 'https://yatrasansthasamiti.netlify.app',
-    siteName: 'yatra sanstha samiti',
+    siteName: 'maitri yatra',
     images: [
       {
         url: 'https://yatrasansthasamiti.netlify.app/kid.jpg',
         width: 1200,
         height: 630,
-        alt: 'yatra sanstha samiti logo',
+        alt: 'maitri yatra logo',
       },
     ],
     locale: 'en_US',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   // Twitter metadata
   twitter: {
     card: 'summary_large_image',
-    title: 'yatra sanstha samiti - Empowering Women and Children',
+    title: 'maitri yatra - Empowering Women and Children',
     description: 'NGO dedicated to the welfare of women and children in Barol Dadi since 2004',
     images: ['https://yatrasansthasamiti.netlify.app/kid.jpg'],
   },
