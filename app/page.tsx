@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Balsamiq_Sans } from "next/font/google";
 import AboutSection from "./about";
+import HeaderSection from "./header";
 
 const balsamiq = Balsamiq_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -39,23 +40,7 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="bg-gradient-to-b from-blue-600 to-blue-400 text-white py-20">
-          <div className="container mx-auto text-center">
-            <h1 className="text-5xl font-bold mc-4">Maitri Yatra</h1>
-            <h2 className="text-2xl font-bold mb-4">
-              Empowering Women and Children Since 2004
-            </h2>
-            <p className="text-xl mb-8">
-              Join us in creating a brighter future for our community
-            </p>
-            <Link
-              href="#donate"
-              className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-2 px-4 rounded-full text-lg transition duration-300"
-            >
-              Donate Now
-            </Link>
-          </div>
-        </section>
+         <HeaderSection/>
 
         <section id="about" className="bg-white">
           <div className="container mx-auto text-center">
