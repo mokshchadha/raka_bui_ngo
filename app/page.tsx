@@ -1,8 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { Balsamiq_Sans } from 'next/font/google'
+import Image from "next/image";
+import Link from "next/link";
+import { Balsamiq_Sans } from "next/font/google";
+import AboutSection from "./about";
 
-const balsamiq = Balsamiq_Sans({ subsets: ['latin'], weight: ['400', '700'] })
+const balsamiq = Balsamiq_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
   return (
@@ -12,10 +13,26 @@ export default function Home() {
           <h1 className="text-1xl font-bold">Yatra Sanstha Samiti</h1>
           <nav>
             <ul className="flex space-x-4">
-              <li><Link href="#about" className="hover:underline">About</Link></li>
-              <li><Link href="#journey" className="hover:underline">Our Journey</Link></li>
-              <li><Link href="#donate" className="hover:underline">Donate</Link></li>
-              <li><Link href="#contact" className="hover:underline">Contact</Link></li>
+              <li>
+                <Link href="#about" className="hover:underline">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="#journey" className="hover:underline">
+                  Our Journey
+                </Link>
+              </li>
+              <li>
+                <Link href="#donate" className="hover:underline">
+                  Donate
+                </Link>
+              </li>
+              <li>
+                <Link href="#contact" className="hover:underline">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -25,39 +42,65 @@ export default function Home() {
         <section className="bg-gradient-to-b from-blue-600 to-blue-400 text-white py-20">
           <div className="container mx-auto text-center">
             <h1 className="text-5xl font-bold mc-4">Yatra Sanstha Samiti</h1>
-            <h2 className="text-2xl font-bold mb-4">Empowering Women and Children Since 2004</h2>
-            <p className="text-xl mb-8">Join us in creating a brighter future for our community</p>
-            <Link href="#donate" className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-2 px-4 rounded-full text-lg transition duration-300">
+            <h2 className="text-2xl font-bold mb-4">
+              Empowering Women and Children Since 2004
+            </h2>
+            <p className="text-xl mb-8">
+              Join us in creating a brighter future for our community
+            </p>
+            <Link
+              href="#donate"
+              className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-2 px-4 rounded-full text-lg transition duration-300"
+            >
               Donate Now
             </Link>
           </div>
         </section>
 
-        <section id="about" className="py-16 bg-white">
+        <section id="about" className="py-6 bg-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-blue-600">About Us</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Yatra Sanstha Samiti is an NGO dedicated to the welfare of women and children. Founded in 2004 by Miss Raka Kaul Labroo, a retired principal from a government school in Dharamshala, we strive to make a positive impact in Barol Dadi and beyond.
-            </p>
-            <Image src="/kid.jpg" alt="Yatra Sanstha Samiti Team" width={600} height={400} className="rounded-lg shadow-md mx-auto" />
+            <AboutSection />
+            <Image
+              src="/kid.jpg"
+              alt="Yatra Sanstha Samiti Team"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-md mx-auto"
+            />
           </div>
         </section>
 
         <section id="journey" className="py-16 bg-blue-100">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-blue-600">Our Journey</h2>
-            <p className="text-lg mb-8">Discover the milestones and achievements of Yatra Sanstha Samiti since 2004.</p>
-            <Link href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300">
-            Know Us
+            <h2 className="text-3xl font-bold mb-8 text-blue-600">
+              Our Journey
+            </h2>
+            <p className="text-lg mb-8">
+              Discover the milestones and achievements of Yatra Sanstha Samiti
+              since 2004.
+            </p>
+            <Link
+              href="#"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300"
+            >
+              Know Us
             </Link>
           </div>
         </section>
 
         <section id="donate" className="py-16 bg-yellow-100">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-blue-600">Support Our Cause</h2>
-            <p className="text-lg mb-8">Your contribution can make a significant difference in the lives of women and children.</p>
-            <Link href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300">
+            <h2 className="text-3xl font-bold mb-8 text-blue-600">
+              Support Our Cause
+            </h2>
+            <p className="text-lg mb-8">
+              Your contribution can make a significant difference in the lives
+              of women and children.
+            </p>
+            <Link
+              href="#"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300"
+            >
               Make a Donation
             </Link>
           </div>
@@ -65,19 +108,35 @@ export default function Home() {
 
         <section id="contact" className="py-16 bg-green-100">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-blue-600">Get in Touch</h2>
-            <p className="text-lg mb-8">Have questions or want to get involved? We&lsquo;d love to hear from you!</p>
-            <Link href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300">
-             Connect with us
+            <h2 className="text-3xl font-bold mb-8 text-blue-600">
+              Get in Touch
+            </h2>
+            <p className="text-lg mb-8">
+              Have questions or want to get involved? We&lsquo;d love to hear
+              from you!
+            </p>
+            <Link
+              href="#"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300"
+            >
+              Connect with us
             </Link>
           </div>
         </section>
 
         <section id="volunteer" className="py-16 bg-purple-100">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-8 text-blue-600">Volunteer With Us</h2>
-            <p className="text-lg mb-8">Join our team of dedicated volunteers and make a difference in your community.</p>
-            <Link href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300">
+            <h2 className="text-3xl font-bold mb-8 text-blue-600">
+              Volunteer With Us
+            </h2>
+            <p className="text-lg mb-8">
+              Join our team of dedicated volunteers and make a difference in
+              your community.
+            </p>
+            <Link
+              href="#"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg transition duration-300"
+            >
               Become a Volunteer
             </Link>
           </div>
@@ -91,6 +150,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
